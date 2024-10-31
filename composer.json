@@ -1,0 +1,16 @@
+{
+  "name": "minhluu/lumin",
+  "description": "This framework is compact yet powerful.",
+  "autoload": {
+    "psr-4": {
+      "Lumin\\": "."
+    }
+  },
+  "authors": [
+    {
+      "name": "Minh Luu",
+      "email": "minhluuth@gmail.com"
+    }
+  ],
+  "require": {}
+}
