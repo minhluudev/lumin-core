@@ -47,7 +47,7 @@ class Helper {
      * @return string The base path of the application.
      */
     public static function basePath(string $path = ''): string {
-        return dirname(__DIR__).$path;
+        return dirname(__DIR__, 3).$path;
     }
 
     /**
