@@ -1,5 +1,5 @@
 {
-  "name": "minhluu/lumin",
+  "name": "minhluu/lumin-core",
   "description": "This framework is compact yet powerful.",
   "autoload": {
     "psr-4": {
