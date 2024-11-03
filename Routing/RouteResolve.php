@@ -4,6 +4,7 @@ namespace Lumin\Routing;
 
 use Exception;
 use Lumin\App;
+use Lumin\Helper;
 use Lumin\Routing\Interfaces\RouteResolveInterface;
 use ReflectionException;
 use ReflectionFunction;
@@ -205,7 +206,7 @@ class RouteResolve implements RouteResolveInterface {
             $args   = $dataMatched['args'] ?? [];
             $this->resolveWithNormalPath($action, $args);
         } else {
-            echo '404';
+            require_once Helper::basePath('/resources/views/_404.php');
         }
     }
 
