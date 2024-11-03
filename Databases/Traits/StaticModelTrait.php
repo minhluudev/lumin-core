@@ -245,7 +245,7 @@ trait StaticModelTrait {
             if (!empty(self::$groupBy)) {
                 $query .= " GROUP BY ".implode(', ', self::$groupBy);
             }
-            echo $query;
+
             $stmt = $this->pdo->prepare($query);
             $stmt->execute();
             $result = $stmt->fetchAll();
